@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEONVOID — Neon Arena Shooter</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #050510; overflow: hidden; }
+  #game { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+  /* Cheap vignette: pure CSS, no per-frame canvas cost. */
+  #vignette {
+    position: fixed; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 12, 0.55) 100%);
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="vignette"></div>
+<script src="game.js"></script>
+</body>
+</html>
